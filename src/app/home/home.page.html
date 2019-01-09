@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card (click)="teste()">
+    <ion-item lines="none">
+      <ion-avatar slot="start">
+        <ion-img src="assets/img/person-default.png"></ion-img>
+      </ion-avatar>
+      <ion-card-header>
+        <ion-card-subtitle>Cesar Granelli</ion-card-subtitle>
+        <ion-card-title>Rockman DX</ion-card-title>
+      </ion-card-header>
+    </ion-item>
+  </ion-card>
+
+  <ion-item lines="none">
+    <ion-avatar>
+      <ion-img src="assets/img/shirt-default.png"></ion-img>
+    </ion-avatar>
+    <ion-label text-center>Ligas</ion-label>
+  </ion-item>
+
+  <ion-card>
+    <ion-item lines="none" button="true" type="button">
+      <ion-thumbnail>
+        <ion-img src="assets/img/shirt-default.png"></ion-img>
+      </ion-thumbnail>
+      <ion-label padding-left>
+        Liga 1
+      </ion-label>
+    </ion-item>
+  </ion-card>
+</ion-content>
