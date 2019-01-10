@@ -10,7 +10,7 @@
 </ion-header>
 
 <ion-content>
-  <ion-card (click)="teste()">
+  <ion-card>
     <ion-item lines="none">
       <ion-avatar slot="start">
         <ion-img src="assets/img/person-default.png"></ion-img>
@@ -22,21 +22,18 @@
     </ion-item>
   </ion-card>
 
-  <ion-item lines="none">
-    <ion-avatar>
-      <ion-img src="assets/img/shirt-default.png"></ion-img>
-    </ion-avatar>
-    <ion-label text-center>Ligas</ion-label>
-  </ion-item>
-
   <ion-card>
-    <ion-item lines="none" button="true" type="button">
-      <ion-thumbnail>
-        <ion-img src="assets/img/shirt-default.png"></ion-img>
-      </ion-thumbnail>
-      <ion-label padding-left>
-        Liga 1
-      </ion-label>
-    </ion-item>
+    <ion-nav>
+      <ion-item lines="none" button="true" type="button" [routerLink]="['/league']">
+        <ion-thumbnail>
+          <ion-img src="assets/img/shirt-default.png"></ion-img>
+        </ion-thumbnail>
+        <ion-label text-center>
+          Liga 1
+        </ion-label>
+        <ion-icon name="arrow-forward"></ion-icon>
+      </ion-item>
+    </ion-nav>
   </ion-card>
+
 </ion-content>

@@ -7,8 +7,7 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-teste() {
-  console.log('Olá mundo');
-}
+  leaguePage() {
+  }
 
 }
