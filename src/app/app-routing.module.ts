@@ -15,7 +15,8 @@ const routes: Routes = [
     path: 'list',
     loadChildren: './list/list.module#ListPageModule'
   },
-  { path: 'league', loadChildren: './league/league.module#LeaguePageModule' }
+  { path: 'league', loadChildren: './league/league.module#LeaguePageModule' },
+  { path: 'team', loadChildren: './team/team.module#TeamPageModule' }
 ];
 
 @NgModule({

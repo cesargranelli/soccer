@@ -1,15 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-league',
   templateUrl: './league.page.html',
   styleUrls: ['./league.page.scss'],
 })
-export class LeaguePage implements OnInit {
+export class LeaguePage {
 
-  constructor() { }
+  constructor(private _navCtrl: NavController) { }
 
-  ngOnInit() {
+  onPage() {//page: string
+    this._navCtrl.navigateForward('team');
   }
 
 }
